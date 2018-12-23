@@ -1,11 +1,11 @@
 #!/usr/bin/perl -w
 
-use lib '../src/bioperl-1.6.924';
-use lib '../src/ensembl/modules';
-use lib '../src/ensembl/modules/Bio/EnsEMBL/DBSQL';
-use lib '../src/ensembl-compara/modules';
-use lib '../src/ensembl-variation/modules';
-use lib '../src/ensembl-funcgen/modules';
+use lib './src/bioperl-1.6.924';
+use lib './src/ensembl/modules';
+use lib './src/ensembl/modules/Bio/EnsEMBL/DBSQL';
+use lib './src/ensembl-compara/modules';
+use lib './src/ensembl-variation/modules';
+use lib './src/ensembl-funcgen/modules';
 use strict;
 use Tk;
 use utf8;

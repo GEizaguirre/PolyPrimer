@@ -1,0 +1,14 @@
+34880	genetree_bgcolour	lemonchiffon
+34880	genetree_fgcolour	yellow4
+34344	genetree_bgcolour	f0f0ff
+34344	genetree_fgcolour	000050
+34693	genetree_bgcolour	lightblue1
+34693	genetree_fgcolour	royalblue4
+34875	genetree_bgcolour	ffe0f0
+34875	genetree_fgcolour	tomato3
+34876	genetree_bgcolour	d0fad0
+34876	genetree_fgcolour	005000
+34877	genetree_bgcolour	d0fafa
+34877	genetree_fgcolour	005050
+34878	genetree_bgcolour	fff0e0
+34878	genetree_fgcolour	403000

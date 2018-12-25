@@ -4,7 +4,18 @@ PolyPrimer 1.0 needs the following modules and programs to be installed in your 
 - BioPerl module for Perl
 - Tk module for Perl
 - DBD module for Perl
-For installing the mentioned programs, modules and the necessary dependencies from the PolyPrimer folder, open a Terminal at the PolyPrimer folder and follow these steps.
+For installing the mentioned programs, modules and the necessary dependencies from the PolyPrimer folder, you can either use the installation script (A) or follow every step manually (B).
+
+A. Scripted installation of dependencies.
+1. Open a terminal in the PolyPrimer folder (open the folder, right click, open in Terminal).
+2. Give execution permissions to the installation script.
+	chmod +x ./Install.sc
+3. Execute the installation script. During its execution, you will have to enter your superuser password and confirm the jobs of the script several times.
+	./Install.sc
+4. Execute PolyPrimer.
+	./PolyPrimer.pl
+
+B. Manual installation of dependencies.
 0. Get into superuser mode.
 1. In case you don’t have Perl,  the make command and the GNU Compiler Collection installed in your computer, install them.
 	apt-get install perl
@@ -12,7 +23,7 @@ For installing the mentioned programs, modules and the necessary dependencies fr
 	apt-get install gcc
 2. Install the Switch library for Perl
 	apt-get install libswitch-perl
-3.  From the PolyPrimer folder, go to ./src/BioPerl-1.6.924 and install BioPerl.
+3.  From the PolyPrimer folder, go to ./src/BioPerl-1.6.924 and install DBI.
 	perl Makefile.PL
 	make
 	make test

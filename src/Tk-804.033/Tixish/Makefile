@@ -21,7 +21,7 @@
 #     NAME => q[Tk::Tixish]
 #     PREREQ_PM => {  }
 #     TEST_REQUIRES => {  }
-#     TYPEMAPS => [q[/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap]]
+#     TYPEMAPS => [q[/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap]]
 #     VERSION => q[1.1]
 #     XS_VERSION => q[804.033]
 #     clean => { FILES=>q[ *.bak] }
@@ -599,7 +599,7 @@ FORCE :
 # --- MakeMaker makefile section:
 # We take a very conservative approach here, but it's worth it.
 # We move Makefile to Makefile.old here to avoid gnu make looping.
-$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
+$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
 	$(NOECHO) $(ECHO) "Makefile out-of-date with respect to $?"
 	$(NOECHO) $(ECHO) "Cleaning current config before rebuilding Makefile..."
 	-$(NOECHO) $(RM_F) $(MAKEFILE_OLD)

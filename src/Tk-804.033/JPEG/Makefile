@@ -23,7 +23,7 @@
 #     PMLIBDIRS => []
 #     PREREQ_PM => { ExtUtils::MakeMaker=>q[6.05] }
 #     TEST_REQUIRES => {  }
-#     TYPEMAPS => [q[/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap]]
+#     TYPEMAPS => [q[/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap]]
 #     VERSION => q[804.033]
 #     VERSION_FROM => q[JPEG.pm]
 #     XS_VERSION => q[804.033]
@@ -223,8 +223,8 @@ XSUBPPDIR = /usr/share/perl/5.26.1/ExtUtils
 XSUBPP = "$(XSUBPPDIR)$(DFSEP)xsubpp"
 XSUBPPRUN = $(PERLRUN) $(XSUBPP)
 XSPROTOARG = 
-XSUBPPDEPS = /usr/share/perl/5.26/ExtUtils/typemap /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap /usr/share/perl/5.26.1/ExtUtils$(DFSEP)xsubpp
-XSUBPPARGS = -typemap '/usr/share/perl/5.26/ExtUtils/typemap' -typemap '/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap'
+XSUBPPDEPS = /usr/share/perl/5.26/ExtUtils/typemap /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap /usr/share/perl/5.26.1/ExtUtils$(DFSEP)xsubpp
+XSUBPPARGS = -typemap '/usr/share/perl/5.26/ExtUtils/typemap' -typemap '/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap'
 XSUBPP_EXTRA_ARGS =
 
 
@@ -818,7 +818,7 @@ imgJPEG$(OBJ_EXT) : imgJPEG.c
 
 # We take a very conservative approach here, but it's worth it.
 # We move Makefile to Makefile.old here to avoid gnu make looping.
-$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
+$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
 	$(NOECHO) $(ECHO) "Makefile out-of-date with respect to $?"
 	$(NOECHO) $(ECHO) "Cleaning current config before rebuilding Makefile..."
 	-$(NOECHO) $(RM_F) $(MAKEFILE_OLD)
@@ -867,10 +867,10 @@ testdb_dynamic :: dynamic pure_all
 subdirs-test_static :: static pure_all
 
 test_static :: subdirs-test_static $(MAP_TARGET)
-	"/home/german/pruebas/PolyPrimer/src/Tk-804.033/JPEG/$(MAP_TARGET)" $(MAP_PERLINC) "-I../t" "-MTkTest" "-e" "checked_test_harness('$(TKDIR)/xt', $(TEST_VERBOSE), '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
+	"/home/german/Desktop/PolyPrimer/src/Tk-804.033/JPEG/$(MAP_TARGET)" $(MAP_PERLINC) "-I../t" "-MTkTest" "-e" "checked_test_harness('$(TKDIR)/xt', $(TEST_VERBOSE), '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
 
 testdb_static :: static pure_all $(MAP_TARGET)
-	PERL_DL_NONLAZY=1 "/home/german/pruebas/PolyPrimer/src/Tk-804.033/JPEG/$(MAP_TARGET)" $(MAP_PERLINC) "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
+	PERL_DL_NONLAZY=1 "/home/german/Desktop/PolyPrimer/src/Tk-804.033/JPEG/$(MAP_TARGET)" $(MAP_PERLINC) "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
 
 
 

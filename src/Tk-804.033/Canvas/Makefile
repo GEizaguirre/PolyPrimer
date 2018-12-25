@@ -21,7 +21,7 @@
 #     NAME => q[Tk::Canvas]
 #     PREREQ_PM => {  }
 #     TEST_REQUIRES => {  }
-#     TYPEMAPS => [q[/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap]]
+#     TYPEMAPS => [q[/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap]]
 #     VERSION => q[804.033]
 #     XS_VERSION => q[804.033]
 #     clean => { FILES=>q[ *.bak] }
@@ -218,8 +218,8 @@ XSUBPPDIR = /usr/share/perl/5.26.1/ExtUtils
 XSUBPP = "$(XSUBPPDIR)$(DFSEP)xsubpp"
 XSUBPPRUN = $(PERLRUN) $(XSUBPP)
 XSPROTOARG = 
-XSUBPPDEPS = /usr/share/perl/5.26/ExtUtils/typemap /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap /usr/share/perl/5.26.1/ExtUtils$(DFSEP)xsubpp
-XSUBPPARGS = -typemap '/usr/share/perl/5.26/ExtUtils/typemap' -typemap '/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap'
+XSUBPPDEPS = /usr/share/perl/5.26/ExtUtils/typemap /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap /usr/share/perl/5.26.1/ExtUtils$(DFSEP)xsubpp
+XSUBPPARGS = -typemap '/usr/share/perl/5.26/ExtUtils/typemap' -typemap '/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap'
 XSUBPP_EXTRA_ARGS =
 
 
@@ -780,7 +780,7 @@ Canvas$(OBJ_EXT) : Canvas.c ../pTk/Lang.h ../pTk/Lang.m ../pTk/Lang.t \
 
 # We take a very conservative approach here, but it's worth it.
 # We move Makefile to Makefile.old here to avoid gnu make looping.
-$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
+$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
 	$(NOECHO) $(ECHO) "Makefile out-of-date with respect to $?"
 	$(NOECHO) $(ECHO) "Cleaning current config before rebuilding Makefile..."
 	-$(NOECHO) $(RM_F) $(MAKEFILE_OLD)

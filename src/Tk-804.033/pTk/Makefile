@@ -23,7 +23,7 @@
 #     PREREQ_PM => {  }
 #     SKIP => [q[distclean], q[dist], q[makeaperl], q[xs_o]]
 #     TEST_REQUIRES => {  }
-#     TYPEMAPS => [q[/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap]]
+#     TYPEMAPS => [q[/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap]]
 #     VERSION => q[804.033]
 #     XS_VERSION => q[804.033]
 #     clean => { FILES=>q[libpTk$(LIB_EXT) *.bak] }
@@ -744,8 +744,8 @@ XSUBPPDIR = /usr/share/perl/5.26.1/ExtUtils
 XSUBPP = "$(XSUBPPDIR)$(DFSEP)xsubpp"
 XSUBPPRUN = $(PERLRUN) $(XSUBPP)
 XSPROTOARG = 
-XSUBPPDEPS = /usr/share/perl/5.26/ExtUtils/typemap /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap /usr/share/perl/5.26.1/ExtUtils$(DFSEP)xsubpp
-XSUBPPARGS = -typemap '/usr/share/perl/5.26/ExtUtils/typemap' -typemap '/home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/typemap'
+XSUBPPDEPS = /usr/share/perl/5.26/ExtUtils/typemap /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap /usr/share/perl/5.26.1/ExtUtils$(DFSEP)xsubpp
+XSUBPPARGS = -typemap '/usr/share/perl/5.26/ExtUtils/typemap' -typemap '/home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/typemap'
 XSUBPP_EXTRA_ARGS =
 
 
@@ -1083,204 +1083,204 @@ realclean purge :: realclean_subdirs
 	  $(DISTVNAME) 
 
 mungeclean ::
-	$(RM_F) tkUnixMenu.c \
-	tkCanvPoly.c \
-	tixHLInd.c \
-	tclPreserve.c \
-	imgInit.c \
+	$(RM_F) tkUnixPort.h \
+	tclUnixNotfy.c \
+	tkUnixDefault.h \
+	img.h \
+	tkCanvLine.c \
+	tixForm.h \
+	tclHash.c \
+	tkGC.c \
+	tkTextImage.c \
+	xbytes.h \
+	tkUnixKey.c \
+	tkUnixFocus.c \
+	tkTextTag.c \
+	tixCompat.c \
+	tkEntry.c \
+	tixImgCmp.c \
+	imgXBM.c \
+	tkUnixFont.c \
+	tixDiWin.c \
+	tkMenu.c \
+	ClientWin.c \
+	tkMenubutton.c \
+	tixImgXpm.c \
+	tkSquare.c \
+	tixDiText.c \
+	tclIntDecls.h \
+	tkListbox.c \
+	tkImgPPM.c \
+	tixUnixPort.h \
+	tkFileFilter.c \
+	tkStubImg.c \
+	tkOldConfig.c \
+	tixGrSort.c \
+	tkEvent.c \
+	tkFont.h \
+	tixHLCol.c \
+	tixGrData.c \
+	tkGet.c \
+	tkCanvas.h \
+	tkScrollbar.h \
+	tkUnixButton.c \
+	tkUnixDraw.c \
+	tixNBFrame.c \
+	tkUnixCursor.c \
+	tkFont.c \
+	tclPlatDecls.h \
+	tk.h \
+	tkMenuDraw.c \
+	exWinHandle.c \
+	tkGrid.c \
+	tkPanedWindow.c \
+	tk3d.c \
+	tixGrFmt.c \
+	tixInputO.c \
+	tkIntDecls.h \
+	ks_names.h \
+	tixImgXpm.h \
+	tixDiITxt.c \
+	tixUnixInt.h \
+	tixGrid.h \
+	tclUnixTime.c \
+	tixBitmaps.h \
+	tkScrollbar.c \
 	tkCursor.c \
+	tkStyle.c \
+	tclDecls.h \
+	imgWindow.c \
+	tkImgPhoto.c \
 	tkOption.c \
+	tkCanvWind.c \
+	tkIntXlibDecls.h \
+	tclIntPlatDecls.h \
+	stbDItem.c \
+	tkMenu.h \
+	tkInt.h \
+	imgXPM.c \
+	port.h \
+	tkButton.c \
+	tkUnixInit.c \
+	tkBitmap.c \
+	tkUnixInt.h \
+	tkTrig.c \
+	tkUnixMenu.c \
+	tkMenubutton.h \
+	tclEvent.c \
+	tkAtom.c \
+	tkUnixMenubu.c \
+	tkSelect.h \
+	tixError.c \
+	tkTextDisp.c \
+	tixMwm.c \
+	tkGrab.c \
+	tixPort.h \
+	imgBMP.c \
+	tkColor.h \
+	tkWindow.c \
+	tixDItem.c \
+	tixHLHdr.c \
+	tkPort.h \
+	tkUnixEvent.c \
+	tixScroll.c \
+	tkCanvas.c \
+	tclPreserve.c \
+	tkClipboard.c \
+	tkImgGIF.c \
+	tkUnix.c \
+	tkMessage.c \
+	tkPlatDecls.h \
+	tixTList.c \
+	tkCanvImg.c \
+	tkTextIndex.c \
+	tkObj.c \
+	tkImage.c \
+	tkColor.c \
+	tkUnixXft.c \
+	tixFormMisc.c \
+	tixGrUtl.c \
+	tclMath.h \
+	tkUnixConfig.c \
+	tk3d.h \
+	tkUnixColor.c \
+	tkUtil.c \
+	imgInit.c \
+	tixDiImg.c \
+	tkCanvPs.c \
+	tixGrRC.c \
+	tkTextBTree.c \
+	tkUnix3d.c \
+	tkSelect.c \
+	tkIntPlatDecls.h \
+	default.h \
+	tixForm.c \
 	tkUnixScrlbr.c \
 	tixList.c \
-	tkImgGIF.c \
-	tixDItem.c \
-	tkTrig.c \
-	tclMath.h \
-	tkIntXlibDecls.h \
-	tkUnix.c \
-	tkUnixConfig.c \
-	tkFocus.c \
-	tkRectOval.c \
-	tixTList.h \
-	tkMenu.h \
-	tclHash.c \
-	tk3d.c \
-	tixError.c \
-	tixFormMisc.c \
-	tkIntPlatDecls.h \
-	tkUnixDefault.h \
-	tkUnixDialog.c \
-	tclNotify.c \
-	tkUnix3d.c \
-	tkUnixColor.c \
-	tkFrame.c \
-	tixGrUtl.c \
-	tkText.h \
-	tkColor.c \
-	tkImgBmap.c \
-	tkButton.h \
-	tkPort.h \
-	tixPort.h \
-	tkCmds.c \
-	tixGrData.h \
-	tixGrid.h \
-	tkText.c \
-	tkCanvImg.c \
-	tixHLCol.c \
-	tixGrRC.c \
-	imgInt.h \
-	tkScale.c \
-	tixForm.c \
-	tkScrollbar.h \
-	tixImgXpm.c \
-	imgXPM.c \
-	tclUnixNotfy.c \
-	tixTList.c \
-	tkPack.c \
-	tixUnixXpm.c \
-	tkGrid.c \
-	tixDiWin.c \
-	tkUnixEvent.c \
-	tkPlace.c \
-	tkColor.h \
-	tkInitScript.h \
-	tkVisual.c \
-	tixInt.h \
-	ks_names.h \
-	tkStyle.c \
-	tkPlatDecls.h \
-	tclEvent.c \
-	tixGrFmt.c \
-	tkUtil.c \
-	tkUnixButton.c \
-	tkUnixSelect.c \
-	tixScroll.c \
-	tkTextMark.c \
-	tixSmpLs.c \
-	tixGrData.c \
-	tixGrid.c \
-	tkImage.c \
-	tkScrollbar.c \
-	tixNBFrame.c \
-	tkUnixPort.h \
-	tixDiText.c \
-	tkTextBTree.c \
-	tclDecls.h \
-	exWinHandle.c \
-	tkScale.h \
-	tkCanvWind.c \
-	tkGrab.c \
-	xbytes.h \
-	port.h \
-	tkCanvArc.c \
-	tkMenu.c \
-	tkOldConfig.c \
-	tkUnixScale.c \
-	tkListbox.c \
-	tkTextImage.c \
-	tkUnixWm.c \
-	imgXBM.c \
-	tixDef.h \
-	tkAtom.c \
-	tkFont.c \
-	tkPointer.c \
-	tkUnixXId.c \
-	tclPlatDecls.h \
-	tkCanvText.c \
-	tixBitmaps.h \
-	imgObj.c \
-	tkInt.h \
-	tkCanvUtil.c \
-	tkMacWinMenu.c \
-	stbDItem.c \
-	tkUnixXft.c \
-	tkUnixKey.c \
 	stbDiStyle.c \
-	tixCompat.c \
-	tkError.c \
-	tkTextDisp.c \
-	tixInputO.c \
-	tkCanvas.h \
-	tkMenubutton.c \
-	tclIntPlatDecls.h \
-	tkUnixMenubu.c \
-	tclTimer.c \
-	tclUnixTime.c \
-	tkButton.c \
-	tkUnixCursor.c \
-	tixUnixPort.h \
-	tkEntry.c \
-	tkUndo.h \
-	tkConfig.c \
-	tkUnixEmbed.c \
-	tkUndo.c \
-	tkFileFilter.c \
-	tkUnixDraw.c \
-	moredefs.h \
-	tixUnixWm.c \
-	tixUtils.c \
-	tkUnixFocus.c \
-	imgWindow.c \
-	tclUnixEvent.c \
-	tkStubImg.c \
-	tkUnixInit.c \
-	tkTextTag.c \
-	tixDiStyle.c \
-	tkUnixFont.c \
-	tkTextWind.c \
-	tkGet.c \
-	tixHList.c \
-	tk3d.h \
-	tkDecls.h \
-	tkSelect.c \
-	tkEvent.c \
-	tkWindow.c \
-	tixForm.h \
-	tixDiImg.c \
-	tkFont.h \
-	tk.h \
-	imgUtil.c \
-	tkMenuDraw.c \
-	tkCanvLine.c \
-	tkUnixInt.h \
-	tkMenubutton.h \
-	img.h \
-	tkGC.c \
-	tkGeometry.c \
-	tkObj.c \
-	tixImgXpm.h \
-	tkIntDecls.h \
-	tkBind.c \
 	tkUnixSend.c \
-	tixImgCmp.c \
-	tkMessage.c \
-	tkCanvBmap.c \
-	tkSelect.h \
-	tkClipboard.c \
-	tixMwm.c \
-	tixHList.h \
-	tclAsync.c \
-	tkCanvas.c \
-	tixUnixDraw.c \
-	tix.h \
-	tkTextIndex.c \
-	tixGrSel.c \
-	tkImgPPM.c \
-	tixDiITxt.c \
-	tkSquare.c \
-	tkCanvPs.c \
-	tixHLHdr.c \
-	tixGrSort.c \
-	tclIntDecls.h \
+	moredefs.h \
 	tkImgUtil.c \
-	tkImgPhoto.c \
-	tkBitmap.c \
-	tkPanedWindow.c \
-	ClientWin.c \
+	tkUnixWm.c \
+	tkPointer.c \
+	tkCanvText.c \
+	tixUtils.c \
+	tixTList.h \
+	imgUtil.c \
+	tixSmpLs.c \
+	tkGeometry.c \
+	tkCanvPoly.c \
+	tkScale.h \
+	tclNotify.c \
+	tkFocus.c \
+	tkVisual.c \
+	tkTextWind.c \
+	tixUnixXpm.c \
+	tkCanvUtil.c \
+	tkImgBmap.c \
+	imgInt.h \
+	tkUnixXId.c \
+	tkFrame.c \
 	tkFileFilter.h \
-	default.h \
-	tixUnixInt.h \
-	imgBMP.c
+	tkMacWinMenu.c \
+	tclTimer.c \
+	tkInitScript.h \
+	tkDecls.h \
+	tclAsync.c \
+	tkBind.c \
+	tixHList.c \
+	tixGrSel.c \
+	tkError.c \
+	tixInt.h \
+	tkUnixDialog.c \
+	tixUnixDraw.c \
+	tixGrData.h \
+	tkCanvBmap.c \
+	tkRectOval.c \
+	tkUndo.c \
+	imgObj.c \
+	tkUnixSelect.c \
+	tixGrid.c \
+	tixUnixWm.c \
+	tixDef.h \
+	tkButton.h \
+	tkScale.c \
+	tclUnixEvent.c \
+	tkTextMark.c \
+	tkUnixScale.c \
+	tixHList.h \
+	tkCmds.c \
+	tixHLInd.c \
+	tkCanvArc.c \
+	tkConfig.c \
+	tkText.c \
+	tkPack.c \
+	tixDiStyle.c \
+	tkUndo.h \
+	tkPlace.c \
+	tkUnixEmbed.c \
+	tix.h \
+	tkText.h
 
 
 # --- MakeMaker metafile section:
@@ -2420,7 +2420,7 @@ tk_f$(OBJ_EXT) : tk_f.c Lang.h tcl.h tclDecls.h tclPlatDecls.h tk.h \
 
 # We take a very conservative approach here, but it's worth it.
 # We move Makefile to Makefile.old here to avoid gnu make looping.
-$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/pruebas/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
+$(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP) /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/Config.pm /home/german/Desktop/PolyPrimer/src/Tk-804.033/Tk/MMutil.pm
 	$(NOECHO) $(ECHO) "Makefile out-of-date with respect to $?"
 	$(NOECHO) $(ECHO) "Cleaning current config before rebuilding Makefile..."
 	-$(NOECHO) $(RM_F) $(MAKEFILE_OLD)

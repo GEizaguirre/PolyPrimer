@@ -1,0 +1,42 @@
+﻿Installation and execution guide - PolyPrimer 1.0 
+PolyPrimer 1.0 needs the following modules and programs to be installed in your computer (with thir respective dependencies):
+- Perl 5.14 through to 5.26.
+- BioPerl module for Perl
+- Tk module for Perl
+- DBD module for Perl
+For installing the mentioned programs, modules and the necessary dependencies from the PolyPrimer folder, open a Terminal at the PolyPrimer folder and follow these steps.
+0. Get into superuser mode.
+1. In case you don’t have Perl,  the make command and the GNU Compiler Collection installed in your computer, install them.
+	apt-get install perl
+	apt-get install make
+	apt-get install gcc
+2. Install the Switch library for Perl
+	apt-get install libswitch-perl
+3.  From the PolyPrimer folder, go to ./src/BioPerl-1.6.924 and install BioPerl.
+	perl Makefile.PL
+	make
+	make test
+	make install
+4. From the PolyPrimer folder, go to ./src/Tk-804.033 and install, first, the necessary dependency libraries, and then,  Tk for Perl.
+	apt-get install libx11-dev
+	apt-get install libpng-dev libz-dev
+	apt-get install libjpeg-dev
+	perl Makefile.PL
+	make
+	make test
+	make install
+5. Install mySQL server and client libraries.
+	apt-get install mysql-server
+	apt-get install libmysqlclient-dev
+6. From the PolyPrimer folder, go to ./src/DBD-mysql-4.022
+	perl Makefile.PL
+	make
+	make test
+	make install
+7. Go to PolyPrimer folder, give execution permission to PolyPrimer.pl and execute it normally.
+
+
+	
+	
+
+

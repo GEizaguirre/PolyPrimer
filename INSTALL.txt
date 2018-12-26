@@ -8,7 +8,7 @@ For installing the mentioned programs, modules and the necessary dependencies fr
 
 A. Scripted installation of dependencies.
 1. Open a terminal in the PolyPrimer folder (open the folder, right click, open in Terminal).
-2. Set the superuse mode.
+2. Get into superuser mode.
 	sudo su
 3. Give execution permissions to the installation script.
 	chmod +x ./Install.sc

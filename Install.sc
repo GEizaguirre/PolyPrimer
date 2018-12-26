@@ -1,6 +1,5 @@
 #!/bin/sh
 
-sudo su
 apt-get install perl
 apt-get install make
 apt-get install gcc
@@ -25,4 +24,4 @@ perl Makefile.PL
 make
 make test
 make install
-chmod +x ../PolyPrimer.pl
+chmod +x ../../PolyPrimer.pl
